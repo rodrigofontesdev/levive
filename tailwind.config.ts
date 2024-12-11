@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        brown: '#A2937C',
+        muted: '#F2F3EE',
       },
     },
   },
