@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${dupletOpen.variable} ${daxlinePro.variable} text-black antialiased scroll-smooth`}
+        className={`${dupletOpen.variable} ${daxlinePro.variable} bg-slate-50 text-black antialiased scroll-smooth`}
       >
         {children}
       </body>

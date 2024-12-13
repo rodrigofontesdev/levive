@@ -19,7 +19,7 @@ export function Hero() {
 
       <div className="max-w-screen-xl mx-auto relative">
         <div className="w-1/2 flex flex-col items-start gap-8 pt-20 pr-10 pb-60">
-          <h1 className="uppercase text-7xl leading-tight -tracking-wider">
+          <h1 className="uppercase text-7xl -tracking-wider">
             Descubra uma nova perspectiva de saúde e beleza
           </h1>
           <p className="text-xl font-light">
