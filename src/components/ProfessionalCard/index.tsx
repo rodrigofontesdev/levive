@@ -1,8 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
-import React from 'react'
 
 type ProfessionalCardProps = {
-  avatar: StaticImageData['src']
+  avatar: StaticImageData
   title: string
   jobRole: string
   description: string
