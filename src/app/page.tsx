@@ -1,8 +1,8 @@
 import { Header } from '@/components/Header'
-import { Hero } from './components/Hero'
-import { AboutUs } from './components/AboutUs'
-import { Professionals } from './components/Professionals'
-import { Services } from './components/Services'
+import { Hero } from './sections/Hero'
+import { AboutUs } from './sections/AboutUs'
+import { Professionals } from './sections/Professionals'
+import { Services } from './sections/Services'
 
 export default function Home() {
   return (

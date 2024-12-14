@@ -19,12 +19,16 @@ export function AboutUs() {
         <div className="max-w-xl bg-white absolute bottom-[20%] -right-[18rem] flex flex-col items-start gap-7 p-14">
           <h2 className="uppercase text-5xl -tracking-wider">Sobre nós</h2>
           <p className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, debitis? Eveniet nobis,
-            non ducimus, autem deserunt cumque ipsa expedita placeat perspiciatis fugit numquam
-            blanditiis, mollitia ex tenetur illum hic eius.
+            A Clínica Levive está pronta para receber você em espaços especialmente planejados para
+            promover bem-estar e saúde. Nossa clínica conta com 4 consultórios, preparados para
+            atender todas as especialidades que oferecemos.
+          </p>
+          <p className="text-lg">
+            Cada detalhe foi pensado com carinho para garantir que sua experiência seja a melhor
+            possível.
           </p>
 
-          <ButtonLink href="#">Call to action</ButtonLink>
+          {/* <ButtonLink href="#">Call to action</ButtonLink> */}
         </div>
       </div>
 
