@@ -16,3 +16,13 @@ h6 {
   font-family: var(--font-daxline-pro);
   line-height: 1.25;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-black !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  @apply text-3xl font-bold !important;
+}
