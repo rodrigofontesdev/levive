@@ -1,6 +1,12 @@
 import localFont from 'next/font/local'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.css'
+
+config.autoAddCss = false
 
 const dupletOpen = localFont({
   src: [
@@ -49,9 +55,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${dupletOpen.variable} ${daxlinePro.variable} bg-slate-50 text-black antialiased scroll-smooth`}
+        className={`${dupletOpen.variable} ${daxlinePro.variable} bg-slate-50 text-lg text-black leading-normal antialiased scroll-smooth`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
