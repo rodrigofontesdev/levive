@@ -4,7 +4,6 @@
 
 body {
   font-family: var(--font-duplet-open);
-  line-height: 1.5;
 }
 
 h1,
@@ -25,4 +24,32 @@ h6 {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   @apply text-3xl font-bold !important;
+}
+
+.page-content p {
+  @apply mb-4;
+}
+
+.page-content a {
+  @apply text-brown;
+}
+
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  @apply text-base leading-normal font-bold mt-8 mb-4;
+}
+
+.page-content h2 {
+  @apply text-xl leading-normal;
+}
+
+.page-content h3 {
+  @apply text-lg leading-normal;
+}
+
+.page-content ul {
+  @apply list-inside list-disc pl-4 mb-4;
 }
