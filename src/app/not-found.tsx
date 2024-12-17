@@ -1,4 +1,32 @@
 import { ButtonLink } from '@/components/ButtonLink'
+import { openGraph, twitterCard } from './shared-metadata'
+import { Metadata } from 'next'
+
+const title = `Página não encontrada | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
+const description = `Entenda como a ${process.env.NEXT_PUBLIC_APP_SHORT_NAME} utiliza cookies para melhorar sua experiência no site.`
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  alternates: {
+    canonical: '/politica-de-cookies',
+  },
+  openGraph: {
+    ...openGraph,
+    title: title,
+    description: description,
+    url: '/politica-de-cookies',
+  },
+  twitter: {
+    ...twitterCard,
+    title: title,
+    description: description,
+  },
+  robots: {
+    follow: false,
+    index: false,
+  },
+}
 
 export default function NotFound() {
   return (
