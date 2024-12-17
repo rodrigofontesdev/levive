@@ -1,4 +1,28 @@
 import Link from 'next/link'
+import { Metadata } from 'next'
+import { openGraph, twitterCard } from '../shared-metadata'
+
+const title = `Política de Cookies | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
+const description = `Entenda como a ${process.env.NEXT_PUBLIC_APP_SHORT_NAME} utiliza cookies para melhorar sua experiência no site. Saiba como gerenciar suas preferências de cookies.`
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  alternates: {
+    canonical: '/politica-de-cookies',
+  },
+  openGraph: {
+    ...openGraph,
+    title: title,
+    description: description,
+    url: '/politica-de-cookies',
+  },
+  twitter: {
+    ...twitterCard,
+    title: title,
+    description: description,
+  },
+}
 
 export default function CookiesPolicy() {
   return (
