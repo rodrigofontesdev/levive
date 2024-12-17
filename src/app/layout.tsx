@@ -3,6 +3,8 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { WhatsAppFloatingButton } from '@/components/WhatsAppFloatingButton'
+import { CookieDialog } from '@/components/CookieDialog'
+import { cookies } from 'next/headers'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.css'
@@ -48,16 +50,21 @@ const daxlinePro = localFont({
   variable: '--font-daxline-pro',
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const cookieStore = await cookies()
+  const hasCookieConsent = cookieStore.has('levive_cookie_consent')
+
   return (
     <html lang="pt-BR">
       <body
         className={`${dupletOpen.variable} ${daxlinePro.variable} bg-slate-50 text-lg text-black leading-normal antialiased scroll-smooth`}
       >
+        {!hasCookieConsent && <CookieDialog />}
+
         <Header />
         {children}
         <Footer />
