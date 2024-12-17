@@ -1,3 +1,29 @@
+import { Metadata } from 'next'
+import { openGraph, twitterCard } from '../shared-metadata'
+
+const title = `Termos de Uso | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
+const description =
+  'Conheça os termos e condições que regem o uso deste site. Entenda seus direitos e responsabilidades ao acessar nosso conteúdo.'
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  alternates: {
+    canonical: '/termos-de-uso',
+  },
+  openGraph: {
+    ...openGraph,
+    title: title,
+    description: description,
+    url: '/termos-de-uso',
+  },
+  twitter: {
+    ...twitterCard,
+    title: title,
+    description: description,
+  },
+}
+
 export default function TermsOfUse() {
   return (
     <main>
