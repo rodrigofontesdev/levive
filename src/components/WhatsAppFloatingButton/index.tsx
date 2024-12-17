@@ -5,7 +5,7 @@ import whatsappImage from '@/assets/whatsapp-glyph.svg'
 
 const phoneNumber = '5594991331618'
 const message =
-  'Olá! 😊 Tenho muito interesse em conhecer a clínica e gostaria de tirar algumas dúvidas antes de agendar uma consulta.'
+  'Olá! 😊 Tenho muito interesse em conhecer a clínica e gostaria de agendar uma avaliação para começar a minha jornada de transformação.'
 const chatUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
 
 export function WhatsAppFloatingButton() {
