@@ -5,6 +5,8 @@ import { Footer } from '@/components/Footer'
 import { WhatsAppFloatingButton } from '@/components/WhatsAppFloatingButton'
 import { CookieDialog } from '@/components/CookieDialog'
 import { cookies } from 'next/headers'
+import { Metadata, Viewport } from 'next'
+import { commom, openGraph, robots, twitterCard } from './shared-metadata'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.css'
@@ -49,6 +51,42 @@ const daxlinePro = localFont({
   display: 'swap',
   variable: '--font-daxline-pro',
 })
+
+const title = `${process.env.NEXT_PUBLIC_APP_SHORT_NAME} | Healthy & Beauty Clinic`
+const description =
+  'Clínica especializada em tratamentos para emagrecimento e harmonização corporal. Descubra uma nova perspectiva de saúde e beleza com a Clínica Levive!'
+
+export const metadata: Metadata = {
+  ...commom,
+  title: title,
+  description: description,
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    ...openGraph,
+    title: title,
+    description: description,
+    url: '/',
+  },
+  twitter: {
+    ...twitterCard,
+    title: title,
+    description: description,
+  },
+  robots: {
+    ...robots,
+  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 2,
+  userScalable: true,
+  themeColor: 'black',
+  colorScheme: 'dark',
+}
 
 export default async function RootLayout({
   children,
