@@ -2,6 +2,7 @@ import localFont from 'next/font/local'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { WhatsAppFloatingButton } from '@/components/WhatsAppFloatingButton'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.css'
@@ -60,6 +61,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+
+        <WhatsAppFloatingButton />
       </body>
     </html>
   )
