@@ -1,4 +1,28 @@
 import Link from 'next/link'
+import { Metadata } from 'next'
+import { openGraph, twitterCard } from '../shared-metadata'
+
+const title = `Política de Privacidade | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
+const description = `Descubra como a ${process.env.NEXT_PUBLIC_APP_SHORT_NAME} protege sua privacidade. Entenda como coletamos, utilizamos e armazenamos seus dados pessoais.`
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  alternates: {
+    canonical: '/politica-de-privacidade',
+  },
+  openGraph: {
+    ...openGraph,
+    title: title,
+    description: description,
+    url: '/politica-de-privacidade',
+  },
+  twitter: {
+    ...twitterCard,
+    title: title,
+    description: description,
+  },
+}
 
 export default function PrivacyPolicy() {
   return (
