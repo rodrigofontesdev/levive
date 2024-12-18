@@ -22,7 +22,7 @@ export function Hero() {
             alt="Hero Image"
             fill
             sizes="max(50vw, 1px)"
-            className="object-cover object-center animate-zoom-out"
+            className="object-cover object-top lg:object-center animate-zoom-out"
           />
         </div>
 
