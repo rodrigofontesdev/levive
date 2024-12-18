@@ -1,6 +1,9 @@
 import { ProfessionalCard } from '@/components/ProfessionalCard'
 
-import profileImage from '@/assets/100x100.svg'
+import drDiegoBarbosa from '@/assets/dr-diego-barbosa.png'
+import drLuizMachado from '@/assets/dr-luiz-machado.png'
+import drSamuelMontalvao from '@/assets/dr-samuel-montalvao.png'
+import draErenildaBarbosa from '@/assets/dra-erenilda-barbosa.png'
 
 export function Professionals() {
   return (
@@ -21,28 +24,28 @@ export function Professionals() {
         </header>
 
         <ProfessionalCard
-          avatar={profileImage}
+          avatar={drDiegoBarbosa}
           title="Dr. Diego Barbosa"
           jobRole="Harmonização Corporal"
           description="Médico do esporte, participante da nutrologia, especializado em definição corporal. Com protocolos precisos e estratégias de alta precisão, otimiza os resultados estéticos de seus pacientes com excelência."
         />
 
         <ProfessionalCard
-          avatar={profileImage}
+          avatar={draErenildaBarbosa}
           title="Dra. Erenilda Barbosa"
           jobRole="Estética Íntima"
           description="Médica ginecologista com mais de 20 anos de experiência e professora de pós-graduação em São Paulo. Atua na harmonização glútea e estética íntima, promovendo liberdade e bem-estar para as mulheres."
         />
 
         <ProfessionalCard
-          avatar={profileImage}
+          avatar={drLuizMachado}
           title="Dr. Luiz H. Machado"
           jobRole="Transplante Capilar"
           description="Médico tricologista e cirurgião capilar, especialista em transplante capilar. Formado pela Universidade de Itaúna, ele se dedica a cuidar do bem-estar dos pacientes e transformar vidas através da autoestima."
         />
 
         <ProfessionalCard
-          avatar={profileImage}
+          avatar={drSamuelMontalvao}
           title="Dr. Samuel Montalvão"
           jobRole="Harmonização Facial"
           description="Cirurgião dentista com mais de 7 anos de experiência em Harmonização Orofacial, inclusive elevando a autoestima de famosos. Ele acredita que a harmonização facial é uma forma de ajudar as pessoas a se reencontrarem e aumentarem sua confiança."

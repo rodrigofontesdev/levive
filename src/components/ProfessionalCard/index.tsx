@@ -15,6 +15,7 @@ export function ProfessionalCard({ avatar, title, jobRole, description }: Profes
           src={avatar}
           width={100}
           height={100}
+          quality={100}
           alt={title}
         />
 
