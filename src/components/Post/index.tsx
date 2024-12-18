@@ -1,16 +1,16 @@
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
-type FeaturedPostProps = {
+type PostProps = {
   cover: StaticImageData
   slug: string
   title: string
   description: string
 }
 
-export function FeaturedPost({ cover, slug, title, description }: FeaturedPostProps) {
+export function Post({ cover, slug, title, description }: PostProps) {
   return (
-    <article className="w-full lg:w-1/2 flex flex-col gap-5">
+    <article className="w-full flex flex-col gap-5">
       <Link
         href={slug}
         className="group"
@@ -19,8 +19,7 @@ export function FeaturedPost({ cover, slug, title, description }: FeaturedPostPr
           <Image
             src={cover}
             alt={title}
-            width={640}
-            height={480}
+            fill
             className="object-cover object-center group-hover:hover:scale-110 transition-all duration-300 overflow-hidden"
           />
         </div>

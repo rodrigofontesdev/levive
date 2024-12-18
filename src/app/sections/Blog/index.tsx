@@ -1,5 +1,5 @@
 import { ButtonLink } from '@/components/ButtonLink'
-import { FeaturedPost } from '@/components/FeaturedPost'
+import { Post } from '@/components/Post'
 
 import postOneImage from '@/assets/post-1.jpg'
 import postTwoImage from '@/assets/post-2.jpg'
@@ -24,7 +24,7 @@ export function Blog() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-10">
-          <FeaturedPost
+          <Post
             cover={postOneImage}
             slug="/blog/post-slug"
             title="Assumenda doloremque voluptatibus nesciunt esse corrupti"
@@ -33,7 +33,7 @@ export function Blog() {
         ullam beatae voluptatem unde eius!"
           />
 
-          <FeaturedPost
+          <Post
             cover={postTwoImage}
             slug="/blog/post-slug"
             title="Assumenda doloremque voluptatibus nesciunt esse corrupti"
