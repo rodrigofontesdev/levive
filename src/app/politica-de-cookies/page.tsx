@@ -29,7 +29,9 @@ export default function CookiesPolicy() {
     <main>
       <section className="page-content">
         <div className="bg-black py-40 px-5">
-          <h1 className="uppercase text-7xl text-center text-white">Política de Cookies</h1>
+          <h1 className="uppercase text-5xl sm:text-7xl text-center text-white">
+            Política de Cookies
+          </h1>
         </div>
 
         <div className="max-w-screen-xl mx-auto py-24 px-5">
@@ -182,43 +184,45 @@ export default function CookiesPolicy() {
 
           <h3>7.1 Cookies Específicos Utilizados</h3>
 
-          <table className="w-full max-w-full border-collapse">
-            <thead className="border border-black">
-              <tr>
-                <th className="py-2 px-4 text-left">Nome do Cookie</th>
-                <th className="py-2 px-4 text-left">Provedor</th>
-                <th className="py-2 px-4 text-left">Finalidade</th>
-                <th className="py-2 px-4 text-left">Duração</th>
-              </tr>
-            </thead>
+          <div className="overflow-x-auto">
+            <table className="w-full max-w-full border-collapse">
+              <thead className="border border-black">
+                <tr>
+                  <th className="py-2 px-4 text-left">Nome do Cookie</th>
+                  <th className="py-2 px-4 text-left">Provedor</th>
+                  <th className="py-2 px-4 text-left">Finalidade</th>
+                  <th className="py-2 px-4 text-left">Duração</th>
+                </tr>
+              </thead>
 
-            <tbody className="border border-black">
-              <tr className="border-b border-black">
-                <td className="py-2 px-4 text-left">_ga</td>
-                <td className="py-2 px-4 text-left">Google Analytics</td>
-                <td className="py-2 px-4 text-left">Distingue usuários únicos</td>
-                <td className="py-2 px-4 text-left">2 anos</td>
-              </tr>
-              <tr className="border-b border-black">
-                <td className="py-2 px-4 text-left">_gid</td>
-                <td className="py-2 px-4 text-left">Google Analytics</td>
-                <td className="py-2 px-4 text-left">Analisa como os usuários usam o site</td>
-                <td className="py-2 px-4 text-left">24 horas</td>
-              </tr>
-              <tr className="border-b border-black">
-                <td className="py-2 px-4 text-left">_fbp</td>
-                <td className="py-2 px-4 text-left">Meta</td>
-                <td className="py-2 px-4 text-left">Rastreia visitas em sites</td>
-                <td className="py-2 px-4 text-left">3 meses</td>
-              </tr>
-              <tr className="border-b border-black">
-                <td className="py-2 px-4 text-left">_gac</td>
-                <td className="py-2 px-4 text-left">Google Ads</td>
-                <td className="py-2 px-4 text-left">Mede conversões de anúncios</td>
-                <td className="py-2 px-4 text-left">90 dias</td>
-              </tr>
-            </tbody>
-          </table>
+              <tbody className="border border-black">
+                <tr className="border-b border-black">
+                  <td className="py-2 px-4 text-left">_ga</td>
+                  <td className="py-2 px-4 text-left">Google Analytics</td>
+                  <td className="py-2 px-4 text-left">Distingue usuários únicos</td>
+                  <td className="py-2 px-4 text-left">2 anos</td>
+                </tr>
+                <tr className="border-b border-black">
+                  <td className="py-2 px-4 text-left">_gid</td>
+                  <td className="py-2 px-4 text-left">Google Analytics</td>
+                  <td className="py-2 px-4 text-left">Analisa como os usuários usam o site</td>
+                  <td className="py-2 px-4 text-left">24 horas</td>
+                </tr>
+                <tr className="border-b border-black">
+                  <td className="py-2 px-4 text-left">_fbp</td>
+                  <td className="py-2 px-4 text-left">Meta</td>
+                  <td className="py-2 px-4 text-left">Rastreia visitas em sites</td>
+                  <td className="py-2 px-4 text-left">3 meses</td>
+                </tr>
+                <tr className="border-b border-black">
+                  <td className="py-2 px-4 text-left">_gac</td>
+                  <td className="py-2 px-4 text-left">Google Ads</td>
+                  <td className="py-2 px-4 text-left">Mede conversões de anúncios</td>
+                  <td className="py-2 px-4 text-left">90 dias</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <h3>7.2 Contato</h3>
 

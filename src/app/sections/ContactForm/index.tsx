@@ -18,7 +18,7 @@ export function ContactForm() {
         />
       </InputGroup.Root>
 
-      <div className="flex gap-5">
+      <div className="flex flex-col sm:flex-row gap-5">
         <InputGroup.Root>
           <InputGroup.Label
             htmlFor="your_mail"
@@ -61,7 +61,12 @@ export function ContactForm() {
         />
       </InputGroup.Root>
 
-      <Button type="submit">Enviar mensagem</Button>
+      <Button
+        type="submit"
+        appearance="secondary"
+      >
+        Enviar mensagem
+      </Button>
     </form>
   )
 }

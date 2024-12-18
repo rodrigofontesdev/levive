@@ -99,7 +99,7 @@ export default async function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${dupletOpen.variable} ${daxlinePro.variable} bg-slate-50 text-lg text-black leading-normal antialiased scroll-smooth`}
+        className={`${dupletOpen.variable} ${daxlinePro.variable} bg-muted text-lg text-black leading-normal antialiased scroll-smooth`}
       >
         {!hasCookieConsent && <CookieDialog />}
 
