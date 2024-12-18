@@ -8,6 +8,7 @@ import { Post } from '@/components/Post'
 type SingleCategoryProps = Promise<{ slug: string }>
 
 export default function SinglePost(props: { params: SingleCategoryProps }) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { slug } = use(props.params)
 
   return (
