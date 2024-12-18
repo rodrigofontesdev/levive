@@ -15,8 +15,9 @@ export function Header() {
           <Image
             src={logoImage}
             alt={`${process.env.NEXT_PUBLIC_APP_NAME}`}
-            width={186}
-            height={40}
+            width={230}
+            height={46}
+            unoptimized
           />
         </Link>
 
