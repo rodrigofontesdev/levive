@@ -11,7 +11,6 @@ const eslintConfig = [
     extends: ['eslint:recommended', 'next/core-web-vitals', 'next/typescript', 'prettier'],
     rules: {
       camelcase: 'error',
-      'capitalized-comments': 'warn',
       'default-case': 'error',
       'default-case-last': 'error',
       'default-param-last': 'warn',
