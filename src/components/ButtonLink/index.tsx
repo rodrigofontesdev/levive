@@ -1,11 +1,12 @@
 import Link, { LinkProps } from 'next/link'
-import { ReactNode } from 'react'
+import { AnchorHTMLAttributes, ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 type ButtonLinkProps = {
   children: ReactNode
   appearance?: 'primary' | 'secondary'
-} & LinkProps
+} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> &
+  LinkProps
 
 export function ButtonLink({ children, appearance = 'primary', ...props }: ButtonLinkProps) {
   const appearanceClass =
@@ -13,6 +14,7 @@ export function ButtonLink({ children, appearance = 'primary', ...props }: Butto
 
   return (
     <Link
+      role="button"
       className={twMerge(
         appearanceClass,
         'inline-block uppercase text-lg text-center text-muted py-3 px-6 transition-colors duration-300 ease-in',
