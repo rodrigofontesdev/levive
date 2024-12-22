@@ -1,59 +1,77 @@
+'use client'
+
 import { ButtonLink } from '@/components/ButtonLink'
+import { motion } from 'motion/react'
+import { clickToChat } from '@/helpers/app'
 import Image from 'next/image'
 
-import heroImage from '@/assets/hero.jpg'
-import submarkImage from '@/assets/submark.svg'
+import heroBannerImage from '@/assets/hero-banner.png'
+import submarkImage from '@/assets/levive-submark-black.svg'
 
-const phoneNumber = '5594991331618'
-const message =
-  'Olá! 😊 Tenho muito interesse em conhecer a clínica e gostaria de agendar uma avaliação para começar a minha jornada de transformação.'
-const chatUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
-
-export function Hero() {
+export function Hero({ sectionId }: { sectionId: string }) {
   return (
     <section
-      id="home"
-      data-section="home"
-      className="relative px-0 lg:px-5 mb-36 overflow-hidden"
+      id={sectionId}
+      data-section={sectionId}
+      className="w-full min-h-[80vh] relative flex flex-col-reverse lg:flex-row justify-center lg:px-5 mb-24 lg:mb-36"
     >
-      <div className="flex flex-col lg:flex-row">
-        <div className="w-full lg:w-1/2 h-full min-h-80 relative lg:absolute lg:right-0 overflow-hidden">
-          <Image
-            src={heroImage}
-            alt="Hero Image"
-            fill
-            sizes="max(50vw, 1px)"
-            className="object-cover object-top lg:object-center animate-zoom-out"
-          />
-        </div>
-
-        <div className="max-w-screen-xl mx-auto relative">
-          <div className="w-full lg:w-1/2 flex flex-col items-start gap-8 pt-20 px-5 lg:pr-10 lg:pl-0 pb-48 xl:pb-80">
-            <h1 className="uppercase text-4xl sm:text-5xl lg:text-6xl leading-tight -tracking-wider">
-              Emagrecimento & Harmonização Corporal
+      <div className="max-w-screen-xl">
+        <div className="w-full lg:w-1/2 h-full flex flex-col justify-between gap-20 relative pt-12 xl:pt-24 px-5 lg:px-0 z-20">
+          <motion.div
+            className="flex flex-col items-start gap-5 lg:gap-10 pr-0 lg:pr-12"
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
+          >
+            <h1 className="uppercase text-[2.5rem] md:text-5xl lg:text-7xl leading-tight -tracking-wider">
+              Desperte sua melhor versão
             </h1>
-            <p className="text-xl font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum doloribus aliquam
-              eius ut iusto provident numquam labore quam corrupti delectus cumque sequi adipisci,
-              laudantium dolor fuga, impedit culpa dolorum.
+
+            <p className="text-lg lg:text-xl font-light">
+              Da harmonização facial ao corporal, nossa tecnologia avançada e profissionais
+              especializados cuidam da sua transformação com resultados duradouros para sua
+              autoestima.
             </p>
 
             <ButtonLink
-              href={chatUrl}
+              href={clickToChat()}
               target="_blank"
             >
               Agendar consulta
             </ButtonLink>
+          </motion.div>
 
-            <div className="absolute bottom-0 xl:bottom-0 animate-bounce">
-              <Image
-                src={submarkImage}
-                alt=""
-                width={100}
-                height={91}
-              />
-            </div>
-          </div>
+          <motion.div
+            initial={{ y: -25 }}
+            animate={{ y: [-25, 0, -25] }}
+            transition={{ duration: 1, delay: 1, ease: 'easeInOut', repeat: Infinity }}
+            className="w-16 lg:w-24"
+          >
+            <Image
+              src={submarkImage}
+              alt=""
+              aria-hidden={true}
+            />
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="w-full lg:w-1/2 h-full relative lg:absolute lg:top-0 lg:right-0 lg:z-10">
+        <div className="w-full h-96 lg:h-full relative flex overflow-hidden">
+          <motion.div
+            initial={{ scale: 1.25 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={heroBannerImage}
+              fill
+              quality={100}
+              alt="Na imagem estão a Dra. Erenilda Barbosa à esquerda, Dr. Diego Barbosa no meio, Dr. Samuel Montalvão e Dr. Luis Machado à direita, respectivamente. Todos na foto estão em pé, com sorriso no rosto e roupas elegantes"
+              className="object-cover object-top lg:object-[50%_50%_0px]"
+            />
+          </motion.div>
         </div>
       </div>
     </section>

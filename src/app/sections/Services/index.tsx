@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import service1Image from '@/assets/service.jpg'
 import service2Image from '@/assets/service2.jpg'
-import submarkImage from '@/assets/submark.svg'
+import submarkImage from '@/assets/levive-submark-black.svg'
 
 const phoneNumber = '5594991331618'
 const message =

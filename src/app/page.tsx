@@ -10,7 +10,7 @@ import { ContactUs } from './sections/ContactUs'
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero sectionId="home" />
       <AboutUs />
       <Professionals />
       <Services />

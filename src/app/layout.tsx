@@ -52,7 +52,7 @@ const daxlinePro = localFont({
   variable: '--font-daxline-pro',
 })
 
-const title = `${process.env.NEXT_PUBLIC_APP_SHORT_NAME} | Healthy & Beauty Clinic`
+const title = `${process.env.NEXT_PUBLIC_APP_SHORT_NAME} | Beleza não se sustenta sem saúde`
 const description =
   'Clínica especializada em tratamentos para emagrecimento e harmonização corporal. Descubra uma nova perspectiva de saúde e beleza com a Clínica Levive!'
 

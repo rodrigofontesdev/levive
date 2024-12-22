@@ -15,12 +15,12 @@ export default {
       },
       keyframes: {
         'zoom-out': {
-          '0%': { transform: 'scale(1.25)' },
+          '0%': { transform: 'scale(1.20)' },
           '100%': { transform: 'scale(1)' },
         },
       },
       animation: {
-        'zoom-out': 'zoom-out 1s 300ms ease-in-out',
+        'zoom-out': 'zoom-out 700ms 300ms ease-in forwards',
       },
     },
   },
