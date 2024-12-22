@@ -97,10 +97,7 @@ export default async function RootLayout({
   const hasCookieConsent = cookieStore.has('levive_cookie_consent')
 
   return (
-    <html
-      lang="pt-BR"
-      className="scroll-smooth"
-    >
+    <html lang="pt-BR">
       <body
         className={`${dupletOpen.variable} ${daxlinePro.variable} bg-muted text-lg text-black leading-normal antialiased`}
       >

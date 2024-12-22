@@ -9,10 +9,11 @@ export function Professionals() {
   return (
     <section
       id="equipe"
-      className="pt-10 lg:pt-24 pb-40 px-5"
+      data-section="equipe"
+      className="mb-48 px-5"
     >
       <div className="max-w-screen-xl mx-auto">
-        <header className="flex flex-col lg:flex-row justify-between gap-10 mb-16 lg:mb-32">
+        <header className="flex flex-col lg:flex-row justify-between gap-10 mb-12 lg:mb-24">
           <h2 className="uppercase text-4xl sm:text-5xl -tracking-wider flex-shrink-0">
             Nossos especialistas
           </h2>
@@ -39,7 +40,7 @@ export function Professionals() {
 
         <ProfessionalCard
           avatar={drLuizMachado}
-          title="Dr. Luiz H. Machado"
+          title="Dr. Luis H. Machado"
           jobRole="Transplante Capilar"
           description="Médico tricologista e cirurgião capilar, especialista em transplante capilar. Formado pela Universidade de Itaúna, ele se dedica a cuidar do bem-estar dos pacientes e transformar vidas através da autoestima."
         />

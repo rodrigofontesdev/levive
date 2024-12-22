@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 
 type MenuRootProps = {
   children: ReactNode
+  mobileMenuMode: boolean
 }
 
 type MenuItemProps = {
@@ -9,10 +10,14 @@ type MenuItemProps = {
   isActive?: boolean
 }
 
-function MenuRoot({ children }: MenuRootProps) {
+function MenuRoot({ children, mobileMenuMode }: MenuRootProps) {
   return (
     <nav>
-      <ul className="flex items-center">{children}</ul>
+      <ul
+        className={`${mobileMenuMode ? 'flex flex-col items-center gap-5' : 'flex items-center'}`}
+      >
+        {children}
+      </ul>
     </nav>
   )
 }

@@ -15,7 +15,8 @@ export function Services() {
   return (
     <section
       id="especialidades"
-      className="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 lg:grid-rows-3"
+      data-section="especialidades"
+      className="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 lg:grid-rows-3 mb-48"
     >
       <ServiceCard
         cover={service1Image}

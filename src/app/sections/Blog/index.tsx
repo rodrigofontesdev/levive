@@ -8,7 +8,8 @@ export function Blog() {
   return (
     <section
       id="blog"
-      className="pt-20 lg:pt-40 pb-40 px-5"
+      data-section="blog"
+      className="mb-48 px-5"
     >
       <div className="max-w-screen-xl mx-auto">
         <header className="flex flex-col lg:flex-row justify-between gap-10 mb-10">
@@ -19,7 +20,7 @@ export function Blog() {
           </p>
         </header>
 
-        <div className="text-right mb-5">
+        <div className="text-right mb-10">
           <ButtonLink href="/blog">Ver Blog</ButtonLink>
         </div>
 

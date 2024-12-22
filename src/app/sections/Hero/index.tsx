@@ -13,7 +13,8 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-[70px] px-0 lg:px-5 overflow-hidden"
+      data-section="home"
+      className="relative px-0 lg:px-5 mb-36 overflow-hidden"
     >
       <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 h-full min-h-80 relative lg:absolute lg:right-0 overflow-hidden">
@@ -37,7 +38,12 @@ export function Hero() {
               laudantium dolor fuga, impedit culpa dolorum.
             </p>
 
-            <ButtonLink href={chatUrl}>Agendar consulta</ButtonLink>
+            <ButtonLink
+              href={chatUrl}
+              target="_blank"
+            >
+              Agendar consulta
+            </ButtonLink>
 
             <div className="absolute bottom-0 xl:bottom-0 animate-bounce">
               <Image

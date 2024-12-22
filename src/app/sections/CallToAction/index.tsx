@@ -7,7 +7,7 @@ const chatUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encod
 
 export function CallToAction() {
   return (
-    <section className="bg-[#AFA599] py-20 px-5">
+    <section className="bg-[#AFA599] mb-48 py-20 px-5">
       <div className="max-w-screen-sm mx-auto">
         <h2 className="uppercase text-4xl sm:text-5xl text-center leading-tight -tracking-wider mb-10">
           Venha viver a <br />

@@ -7,7 +7,8 @@ export function AboutUs() {
   return (
     <section
       id="sobre"
-      className="flex flex-col lg:flex-row justify-between items-center gap-y-24 relative py-36"
+      data-section="sobre"
+      className="flex flex-col lg:flex-row justify-between items-center gap-y-24 relative mb-48"
     >
       <div className="w-full lg:w-1/2 h-96 lg:h-[900px] relative">
         <Image
