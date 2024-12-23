@@ -10,17 +10,9 @@ export default {
     extend: {
       colors: {
         brown: '#A2937C',
+        'light-brown': '#D7D1C3',
         'dark-brown': '#6F5F4A',
         muted: '#F2F3EE',
-      },
-      keyframes: {
-        'zoom-out': {
-          '0%': { transform: 'scale(1.20)' },
-          '100%': { transform: 'scale(1)' },
-        },
-      },
-      animation: {
-        'zoom-out': 'zoom-out 700ms 300ms ease-in forwards',
       },
     },
   },

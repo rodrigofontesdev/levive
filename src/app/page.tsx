@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Hero sectionId="home" />
       <AboutUs sectionId="sobre" />
-      <Professionals />
+      <Professionals sectionId="equipe" />
       <Services />
       <BeforeAndAfter />
       <CallToAction />
