@@ -22,7 +22,7 @@ export function Header() {
   const isHomeLinkActive = pathname === '/' && (pageSectionId === '' || pageSectionId === 'home')
 
   useEffect(
-    function closeMobileMenuOnPageSectionChange() {
+    function shouldCloseMobileMenuOnPageSectionChange() {
       setIsMobileMenuOpen(false)
     },
     [pageSectionId],
