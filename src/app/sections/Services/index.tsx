@@ -1,75 +1,82 @@
+import Image from 'next/image'
 import { ServiceCard } from '@/components/ServiceCard'
 import { ButtonLink } from '@/components/ButtonLink'
-import Image from 'next/image'
+import { clickToChat } from '@/helpers/app'
 
 import service1Image from '@/assets/service.jpg'
 import service2Image from '@/assets/service2.jpg'
-import submarkImage from '@/assets/levive-submark-black.svg'
+import submarkImage from '@/assets/levive-submark-brown.svg'
 
-const phoneNumber = '5594991331618'
-const message =
-  'Olá! 😊 Tenho muito interesse em conhecer a clínica e gostaria de agendar uma avaliação para começar a minha jornada de transformação.'
-const chatUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
-
-export function Services() {
+export function Services({ sectionId }: { sectionId: string }) {
   return (
     <section
-      id="especialidades"
-      data-section="especialidades"
-      className="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 lg:grid-rows-3 mb-48"
+      id={sectionId}
+      data-section={sectionId}
+      className="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 lg:grid-rows-3 pt-12 mb-12 lg:mb-40"
     >
-      <ServiceCard
-        cover={service1Image}
-        title="Emagrecimento"
-        description="Soluções avançadas para você alcançar e manter seu peso ideal com saúde e equilíbrio."
-      />
+      <div className="h-[500px] lg:h-[664px]">
+        <ServiceCard
+          cover={service1Image}
+          title="Emagrecimento"
+          description="Soluções avançadas para você alcançar e manter seu peso ideal com saúde e equilíbrio."
+        />
+      </div>
 
-      <ServiceCard
-        cover={service2Image}
-        title="Harmonização Corporal"
-        description="Contornos definidos e harmonia perfeita que refletem sua beleza."
-      />
+      <div className="h-[500px] lg:h-[664px]">
+        <ServiceCard
+          cover={service2Image}
+          title="Harmonização Corporal"
+          description="Contornos definidos e harmonia perfeita que refletem sua beleza."
+        />
+      </div>
 
-      <ServiceCard
-        cover={service2Image}
-        title="Harmonização Facial"
-        description="Técnicas refinadas para realçar sua expressão e rejuvenescer sua aparência."
-      />
+      <div className="h-[500px] lg:h-[664px]">
+        <ServiceCard
+          cover={service2Image}
+          title="Harmonização Facial"
+          description="Técnicas refinadas para realçar sua expressão e rejuvenescer sua aparência."
+        />
+      </div>
 
-      <ServiceCard
-        cover={service1Image}
-        title="Estética Íntima"
-        description="Tratamentos discretos e inovadores para renovar sua confiança e bem-estar."
-      />
+      <div className="h-[500px] lg:h-[664px]">
+        <ServiceCard
+          cover={service1Image}
+          title="Estética Íntima"
+          description="Tratamentos discretos e inovadores para renovar sua confiança e bem-estar."
+        />
+      </div>
 
-      <ServiceCard
-        cover={service1Image}
-        title="Transplante Capilar"
-        description="Tecnologia de ponta para restaurar seu cabelo e sua autoestima."
-      />
+      <div className="h-[500px] lg:h-[664px]">
+        <ServiceCard
+          cover={service1Image}
+          title="Transplante Capilar"
+          description="Tecnologia de ponta para restaurar seu cabelo e sua autoestima."
+        />
+      </div>
 
-      <article className="flex flex-col relative justify-center items-center h-[664px] py-20 px-10 bg-[#e0e3d7]">
-        <div className="relative z-10">
-          <h3 className="uppercase text-5xl text-center text-black -tracking-wider mb-8">
+      <article className="h-[500px] lg:h-[664px] flex justify-center items-center relative py-10 lg:py-20 px-5 lg:px-10 bg-light-brown">
+        <div className="max-w-lg flex flex-col items-center justify-center gap-8 relative z-10">
+          <h3 className="uppercase text-4xl md:text-5xl text-center -tracking-wider">
             Agendar consulta
           </h3>
 
-          <p className="text-lg text-center text-black mb-16">
-            Venha nos visitar e descobrir como podemos ajudar você a se sentir bem consigo mesma.
+          <p className="text-center mb-4">
+            Venha nos visitar e descobrir como podemos ajudar você a se sentir bem consigo mesmo.
           </p>
 
-          <div className="text-center">
-            <ButtonLink href={chatUrl}>Agendar consulta</ButtonLink>
-          </div>
+          <ButtonLink
+            href={clickToChat()}
+            target="_blank"
+          >
+            Agendar consulta
+          </ButtonLink>
         </div>
 
-        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-5">
+        <div className="absolute w-full max-w-[22.5rem] lg:max-w-[30rem] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-20">
           <Image
             src={submarkImage}
             alt=""
-            width={500}
-            height={500}
-            aria-hidden
+            aria-hidden={true}
           />
         </div>
       </article>

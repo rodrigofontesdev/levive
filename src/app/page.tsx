@@ -13,7 +13,7 @@ export default function Home() {
       <Hero sectionId="home" />
       <AboutUs sectionId="sobre" />
       <Professionals sectionId="equipe" />
-      <Services />
+      <Services sectionId="especialidades" />
       <BeforeAndAfter />
       <CallToAction />
       <Blog />

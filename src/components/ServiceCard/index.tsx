@@ -1,4 +1,7 @@
+'use client'
+
 import Image, { StaticImageData } from 'next/image'
+import { motion } from 'motion/react'
 
 type ServiceCardProps = {
   cover: StaticImageData
@@ -8,26 +11,48 @@ type ServiceCardProps = {
 
 export function ServiceCard({ cover, title, description }: ServiceCardProps) {
   return (
-    <article className="h-[664px] relative group">
-      <Image
-        src={cover}
-        sizes="max(50vw, 1px)"
-        fill
-        alt={title}
-        className="object-cover object-center"
-      />
+    <article className="w-full h-full relative overflow-hidden">
+      <motion.div
+        initial={{ scale: 1.25 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ amount: 0.2 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className="w-full h-full relative"
+      >
+        <Image
+          src={cover}
+          fill
+          sizes="max(50vw, 1px)"
+          alt={title}
+          className="object-cover object-center"
+        />
+      </motion.div>
 
-      <div className="absolute right-0 bottom-0 left-0 z-20 py-5 px-10 group-hover:-translate-y-10 transition-transform duration-300 ease-in will-change-transform">
-        <h3 className="uppercase text-4xl sm:text-5xl text-center text-white leading-tight -tracking-wider mb-14">
-          {title}
-        </h3>
+      <motion.div
+        whileHover="hovered"
+        className="absolute inset-0 z-10 flex flex-col justify-end items-center gap-12 p-10 pb-5"
+      >
+        <motion.div
+          initial={{ y: 0 }}
+          variants={{ hovered: { y: -50 } }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          <h3 className="uppercase text-4xl md:text-5xl text-white text-center -tracking-wider">
+            {title}
+          </h3>
+        </motion.div>
 
-        <p className="text-lg text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in will-change-[opacity]">
-          {description}
-        </p>
-      </div>
+        <motion.div
+          initial={{ y: 0, opacity: 0 }}
+          variants={{ hovered: { y: -50, opacity: 1 } }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          className="min-h-14"
+        >
+          <p className="lg:text-xl text-white text-center font-light">{description}</p>
+        </motion.div>
+      </motion.div>
 
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-neutral-900/15 to-neutral-900" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/15 to-neutral-900" />
     </article>
   )
 }
