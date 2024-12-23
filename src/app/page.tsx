@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Hero sectionId="home" />
-      <AboutUs />
+      <AboutUs sectionId="sobre" />
       <Professionals />
       <Services />
       <BeforeAndAfter />
