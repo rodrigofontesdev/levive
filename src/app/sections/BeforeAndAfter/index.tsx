@@ -14,16 +14,16 @@ import after2Image from '@/assets/after2.svg'
 
 export function BeforeAndAfter() {
   return (
-    <section className="mb-48 px-5">
+    <section className="pt-12 px-5 mb-12 lg:mb-40">
       <div className="max-w-screen-xl mx-auto">
         <header className="flex flex-col lg:flex-row justify-between gap-10 mb-12 lg:mb-24">
-          <h2 className="uppercase text-4xl sm:text-5xl -tracking-wider flex-shrink-0">
+          <h2 className="uppercase text-4xl md:text-5xl -tracking-wider flex-shrink-0">
             Transformações Reais
           </h2>
-          <p className="text-lg lg:text-right lg:max-w-2xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eveniet optio nesciunt
-            consequuntur ipsam iusto magnam nulla! Ut quod labore quo earum dolores ea eveniet fugit
-            optio dolorum dolore. Laudantium.
+          <p className="lg:max-w-[680px] lg:text-right">
+            Resultados que transformam vidas e inspiram confiança. Conheça as histórias de pacientes
+            que já realizaram seus sonhos em nossa clínica, com procedimentos seguros e resultados
+            naturais que respeitam a beleza única de cada pessoa.
           </p>
         </header>
 
