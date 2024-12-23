@@ -13,7 +13,7 @@ export function Hero({ sectionId }: { sectionId: string }) {
     <section
       id={sectionId}
       data-section={sectionId}
-      className="w-full min-h-[80vh] relative flex flex-col-reverse lg:flex-row justify-center lg:px-5 mb-24 lg:mb-36"
+      className="w-full min-h-[80vh] relative flex flex-col-reverse lg:flex-row justify-center lg:px-5 mb-12 lg:mb-24"
     >
       <div className="max-w-screen-xl">
         <div className="w-full lg:w-1/2 h-full flex flex-col justify-between gap-20 relative pt-12 xl:pt-24 px-5 lg:px-0 z-20">

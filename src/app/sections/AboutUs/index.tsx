@@ -11,18 +11,19 @@ export function AboutUs({ sectionId }: { sectionId: string }) {
     <section
       id={sectionId}
       data-section={sectionId}
-      className="flex flex-col lg:flex-row justify-between items-center gap-24 relative mb-24 lg:mb-48"
+      className="flex flex-col lg:flex-row justify-between items-center gap-24 relative pt-12 mb-12 lg:mb-24"
     >
       <div className="w-full lg:w-1/2 h-96 lg:h-[900px] relative z-10">
         <Image
           src={aboutUsLargeImage}
           fill
+          sizes="50vw"
           alt=""
           className="object-cover object-center"
         />
       </div>
 
-      <div className="w-full absolute bottom-1/2 left-1/2 translate-y-1/2 -translate-x-1/2 z-30 px-5">
+      <div className="w-full absolute bottom-1/2 right-1/2 translate-y-1/2 translate-x-1/2 z-30 px-5">
         <motion.div
           initial={{ y: 150 }}
           whileInView={{ y: 0 }}
@@ -46,6 +47,7 @@ export function AboutUs({ sectionId }: { sectionId: string }) {
         <Image
           src={aboutUsSmallImage}
           fill
+          sizes="440px"
           alt=""
           className="object-cover object-center"
         />

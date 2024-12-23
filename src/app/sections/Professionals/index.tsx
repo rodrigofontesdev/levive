@@ -13,7 +13,7 @@ export function Professionals({ sectionId }: { sectionId: string }) {
     <section
       id={sectionId}
       data-section={sectionId}
-      className="mb-24 lg:mb-48 px-5"
+      className="pt-24 px-5 mb-12 lg:mb-40"
     >
       <motion.div
         initial={{ y: 150 }}
