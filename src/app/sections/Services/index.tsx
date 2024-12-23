@@ -12,7 +12,7 @@ export function Services({ sectionId }: { sectionId: string }) {
     <section
       id={sectionId}
       data-section={sectionId}
-      className="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 lg:grid-rows-3 pt-12 mb-12 lg:mb-40"
+      className="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 lg:grid-rows-3 pt-12 mb-12 lg:mb-24"
     >
       <div className="h-[500px] lg:h-[664px]">
         <ServiceCard

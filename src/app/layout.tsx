@@ -9,6 +9,8 @@ import { Metadata, Viewport } from 'next'
 import { commom, openGraph, robots, twitterCard } from './shared-metadata'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import './globals.css'
 
 config.autoAddCss = false

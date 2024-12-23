@@ -26,6 +26,18 @@ h6 {
   @apply text-3xl font-bold !important;
 }
 
+.swiper-pagination-horizontal {
+  @apply w-full flex justify-center gap-2 mt-10 !important;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-black/35 rounded-full !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-black !important;
+}
+
 .page-content p {
   @apply mb-4;
 }
