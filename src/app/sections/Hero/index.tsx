@@ -27,7 +27,7 @@ export function Hero({ sectionId }: { sectionId: string }) {
               Desperte sua melhor versão
             </h1>
 
-            <p className="text-lg lg:text-xl font-light">
+            <p className="lg:text-xl font-light">
               Da harmonização facial ao corporal, nossa tecnologia avançada e profissionais
               especializados cuidam da sua transformação com resultados duradouros para sua
               autoestima.
