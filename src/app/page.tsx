@@ -16,7 +16,7 @@ export default function Home() {
       <Services sectionId="especialidades" />
       <BeforeAndAfter />
       <CallToAction />
-      <Blog />
+      <Blog sectionId="blog" />
       <ContactUs />
     </main>
   )

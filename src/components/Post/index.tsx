@@ -1,5 +1,8 @@
+'use client'
+
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
+import { motion } from 'motion/react'
 
 type PostProps = {
   cover: StaticImageData
@@ -13,23 +16,32 @@ export function Post({ cover, slug, title, description }: PostProps) {
     <article className="w-full flex flex-col gap-5">
       <Link
         href={slug}
-        className="group"
+        className="block overflow-hidden"
       >
-        <div className="h-96 relative overflow-hidden">
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          className="w-full h-[360px] lg:h-[480px] relative"
+        >
           <Image
             src={cover}
-            alt={title}
+            sizes="max(50vw, 1px)"
             fill
-            className="object-cover object-center group-hover:hover:scale-110 transition-all duration-300 overflow-hidden"
+            alt={title}
+            className="object-cover object-center"
           />
-        </div>
+        </motion.div>
       </Link>
 
-      <Link href={slug}>
-        <h3 className="uppercase text-2xl sm:text-3xl -tracking-wider">{title}</h3>
+      <Link
+        href={slug}
+        className="hover:underline"
+      >
+        <h3 className="uppercase text-2xl md:text-3xl -tracking-wider">{title}</h3>
       </Link>
 
-      <p>{description}</p>
+      <p className="text-base">{description}</p>
     </article>
   )
 }
