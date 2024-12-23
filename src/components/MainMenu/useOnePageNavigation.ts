@@ -54,9 +54,11 @@ export function useOnePageNavigation() {
     }
 
     const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setPageSectionId(entries[0].target.id)
-      }
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setPageSectionId(entry.target.id)
+        }
+      })
     }, options)
 
     const observePageSections = () => sections.forEach((section) => observer.observe(section))
