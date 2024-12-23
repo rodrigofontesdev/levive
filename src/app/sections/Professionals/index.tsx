@@ -18,6 +18,7 @@ export function Professionals({ sectionId }: { sectionId: string }) {
       <motion.div
         initial={{ y: 150 }}
         whileInView={{ y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
         <div className="max-w-screen-xl mx-auto">

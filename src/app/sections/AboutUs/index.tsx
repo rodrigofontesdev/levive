@@ -27,6 +27,7 @@ export function AboutUs({ sectionId }: { sectionId: string }) {
         <motion.div
           initial={{ y: 150 }}
           whileInView={{ y: 0 }}
+          viewport={{ once: true }}
           transition={{ type: 'spring', bounce: 0.5, duration: 1 }}
         >
           <div className="w-full max-w-screen-sm mx-auto flex flex-col gap-7 bg-white p-7 md:p-14">
