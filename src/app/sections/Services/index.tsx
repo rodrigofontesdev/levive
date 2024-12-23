@@ -55,7 +55,7 @@ export function Services({ sectionId }: { sectionId: string }) {
       </div>
 
       <article className="h-[500px] lg:h-[664px] flex justify-center items-center relative py-10 lg:py-20 px-5 lg:px-10 bg-light-brown">
-        <div className="max-w-lg flex flex-col items-center justify-center gap-8 relative z-10">
+        <div className="max-w-lg flex flex-col justify-center items-center gap-8 relative z-10">
           <h3 className="uppercase text-4xl md:text-5xl text-center -tracking-wider">
             Agendar consulta
           </h3>
@@ -72,7 +72,7 @@ export function Services({ sectionId }: { sectionId: string }) {
           </ButtonLink>
         </div>
 
-        <div className="absolute w-full max-w-[22.5rem] lg:max-w-[30rem] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-20">
+        <div className="absolute w-full max-w-[22.5rem] lg:max-w-[30rem] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-10">
           <Image
             src={submarkImage}
             alt=""
