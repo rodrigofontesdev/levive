@@ -37,7 +37,7 @@ export function ServiceCard({ cover, title, description }: ServiceCardProps) {
           variants={{ hovered: { y: -50 } }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
-          <h3 className="uppercase text-4xl md:text-5xl text-white text-center -tracking-wider">
+          <h3 className="uppercase text-4xl md:text-5xl text-muted text-center -tracking-wider">
             {title}
           </h3>
         </motion.div>
@@ -48,7 +48,7 @@ export function ServiceCard({ cover, title, description }: ServiceCardProps) {
           transition={{ duration: 0.5, ease: 'easeInOut' }}
           className="min-h-14"
         >
-          <p className="lg:text-xl text-white text-center font-light">{description}</p>
+          <p className="lg:text-xl text-muted text-center font-light">{description}</p>
         </motion.div>
       </motion.div>
 
