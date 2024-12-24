@@ -93,7 +93,7 @@ export function Footer() {
             <h2 className="text-xl text-muted font-bold -tracking-wider pb-4">Endereço</h2>
 
             <p className="text-muted">
-              Rua C, 538, Cidade Nova
+              Rua C, 549, Cidade Nova
               <br />
               Parauapebas, Pará, Brasil, 68515-000
             </p>
