@@ -28,8 +28,10 @@ export default function TermsOfUse() {
   return (
     <main>
       <section className="page-content">
-        <div className="bg-black py-40 px-5">
-          <h1 className="uppercase text-5xl sm:text-7xl text-center text-white">Termos de Uso</h1>
+        <div className="bg-very-dark-brown py-24 lg:py-40 px-5">
+          <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl text-muted text-center leading-tight -tracking-wider">
+            Termos de Uso
+          </h1>
         </div>
 
         <div className="max-w-screen-xl mx-auto py-24 px-5">
