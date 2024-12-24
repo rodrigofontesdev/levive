@@ -32,8 +32,8 @@ function Input({ className, ...props }: InputProps) {
   return (
     <input
       className={twMerge(
-        'bg-transparent text-lg placeholder:text-white p-5',
-        'border border-white/10 focus:border-white outline-none transition-colors duration-300 ease-in',
+        'bg-very-dark-brown text-muted placeholder:text-muted p-5',
+        'border border-brown/20 focus:border-brown outline-none transition-colors duration-300 ease-in',
         className,
       )}
       {...props}
@@ -45,8 +45,8 @@ function TextArea({ className, ...props }: TextAreaProps) {
   return (
     <textarea
       className={twMerge(
-        'bg-transparent text-lg placeholder:text-white p-5',
-        'border border-white/10 focus:border focus:border-white',
+        'bg-very-dark-brown text-muted placeholder:text-muted p-5',
+        'border border-brown/20 focus:border-brown',
         'outline-none transition-colors duration-300 ease-in',
         className,
       )}

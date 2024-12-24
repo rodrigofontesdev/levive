@@ -17,7 +17,7 @@ export default function Home() {
       <BeforeAndAfter />
       <CallToAction />
       <Blog sectionId="blog" />
-      <ContactUs />
+      <ContactUs sectionId="contato" />
     </main>
   )
 }

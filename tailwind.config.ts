@@ -12,6 +12,7 @@ export default {
         brown: '#A2937C',
         'light-brown': '#D7D1C3',
         'dark-brown': '#6F5F4A',
+        'very-dark-brown': '#171310',
         muted: '#F2F3EE',
       },
     },
