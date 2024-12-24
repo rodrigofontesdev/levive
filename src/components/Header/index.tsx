@@ -12,7 +12,7 @@ import { useOnePageNavigation } from '../MainMenu/useOnePageNavigation'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-import logoImage from '@/assets/logo.svg'
+import logoDarkImage from '@/assets/logo-dark.svg'
 
 export function Header() {
   const { isSticky } = useStickyHeader({ elementId: 'main-header' })
@@ -46,7 +46,7 @@ export function Header() {
               onClick={() => handlePageSectionChange('')}
             >
               <Image
-                src={logoImage}
+                src={logoDarkImage}
                 alt={`${process.env.NEXT_PUBLIC_APP_NAME}`}
                 unoptimized
               />
