@@ -43,7 +43,7 @@ h6 {
 }
 
 .page-content a {
-  @apply text-brown;
+  @apply text-brown hover:underline;
 }
 
 .page-content h2,
