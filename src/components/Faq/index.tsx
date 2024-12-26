@@ -52,7 +52,7 @@ function Item({ children, title, name }: ItemProps) {
   return (
     <Accordion.Item
       value={name}
-      className="bg-very-dark-brown border border-brown p-5 cursor-pointer data-[state=closed]:hover:bg-brown transition-colors duration-300 ease-in"
+      className="bg-very-dark-brown border border-brown p-5"
     >
       <Trigger title={title} />
 
