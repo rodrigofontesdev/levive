@@ -72,7 +72,7 @@ export function Services({ sectionId }: { sectionId: string }) {
           </ButtonLink>
         </div>
 
-        <div className="absolute w-full max-w-[22.5rem] lg:max-w-[30rem] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-10">
+        <div className="absolute w-full max-w-[22.5rem] lg:max-w-[30rem] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-15">
           <Image
             src={submarkImage}
             alt=""

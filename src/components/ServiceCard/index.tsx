@@ -30,11 +30,12 @@ export function ServiceCard({ cover, title, description }: ServiceCardProps) {
 
       <motion.div
         whileHover="hovered"
+        whileTap="tapped"
         className="absolute inset-0 z-10 flex flex-col justify-end items-center gap-12 p-10 pb-5"
       >
         <motion.div
           initial={{ y: 0 }}
-          variants={{ hovered: { y: -50 } }}
+          variants={{ hovered: { y: -50 }, tapped: { y: -50, opacity: 1 } }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <h3 className="uppercase text-4xl md:text-5xl text-muted text-center -tracking-wider">
@@ -44,7 +45,7 @@ export function ServiceCard({ cover, title, description }: ServiceCardProps) {
 
         <motion.div
           initial={{ y: 0, opacity: 0 }}
-          variants={{ hovered: { y: -50, opacity: 1 } }}
+          variants={{ hovered: { y: -50, opacity: 1 }, tapped: { y: -50, opacity: 1 } }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
           className="min-h-14"
         >
