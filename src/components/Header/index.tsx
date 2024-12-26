@@ -40,7 +40,7 @@ export function Header() {
         )}
       >
         <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center gap-5">
-          <div className="w-60">
+          <div className="w-56">
             <Link
               href="/"
               onClick={() => handlePageSectionChange('')}

@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="920.00195"
+   width="920.00055"
    height="172.23029"
-   viewBox="0 0 920.00195 172.23029"
+   viewBox="0 0 920.00055 172.23029"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
@@ -19,46 +19,46 @@
   </defs>
   <g
      id="layer-MC0"
-     transform="translate(-32379.998,-633.88505)">
+     transform="translate(-259.99948,-633.88505)">
     <path
-       id="path474"
+       id="path1"
        d="m 0,0 h -9.534 v -129.172 h 69.445 v 9.168 H 0 Z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,32392.711,633.8852)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,272.71147,633.8852)" />
     <path
-       id="path475"
+       id="path2"
        d="M 0,0 H 60.093 V 9.168 H -9.534 v -70.545 h 73.475 v 9.168 H 0 Z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,32555.643,724.27933)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,435.64333,724.27933)" />
     <path
-       id="path476"
+       id="path3"
        d="m 390.492,604.586 h -73.293 v -9.166 h 73.293 z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,32120,1440)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,0,1440)" />
     <path
-       id="path477"
+       id="path4"
        d="m 0,0 v 52.209 h 60.093 v 9.168 H -9.535 V -9.168 H 63.941 V 0 Z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,33214.745,793.8912)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,1094.7453,793.8912)" />
     <path
-       id="path478"
+       id="path5"
        d="m 884.817,604.586 h -73.293 v -9.166 h 73.293 z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,32120,1440)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,0,1440)" />
     <path
-       id="path479"
+       id="path6"
        d="m 0,0 -43.199,115.258 h -9.903 L -4.803,-13.914 H 4.619 L 53.105,115.258 H 43.2 Z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,32770.483,787.5624)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,650.4832,787.5624)" />
     <path
-       id="path480"
+       id="path7"
        d="m 591.83,475.414 h 9.535 v 129.172 h -9.535 z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,32120,1440)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,0,1440)" />
     <path
-       id="path481"
+       id="path8"
        d="m 0,0 -43.199,115.258 h -9.903 L -4.803,-13.914 h 9.42 L 53.105,115.258 H 43.2 Z"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1.3333333,0,0,-1.3333333,33060.684,787.5624)" />
+       transform="matrix(1.3333333,0,0,-1.3333333,940.68427,787.5624)" />
   </g>
 </svg>
