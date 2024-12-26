@@ -25,6 +25,7 @@ export function Footer() {
               href={`${process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE}`}
               className="text-brown hover:text-dark-brown transition-colors duration-300 ease-in"
               target="_blank"
+              aria-label="Siga a nossa clínica no Instagram"
             >
               <FontAwesomeIcon
                 icon={faInstagram}
