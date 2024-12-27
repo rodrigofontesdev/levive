@@ -32,7 +32,7 @@ export default function NotFound() {
   return (
     <main>
       <section>
-        <div className="max-w-screen-xl mx-auto py-16 lg:py-28 px-5">
+        <div className="max-w-screen-xl mx-auto pt-8 pb-16 lg:pt-16 lg:pb-28 px-5">
           <span className="block uppercase text-[10rem] text-center font-bold mb-5">404</span>
           <h1 className="uppercase text-4xl text-center -tracking-wider mb-10">
             Página não encontrada
