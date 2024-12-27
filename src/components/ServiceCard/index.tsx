@@ -2,7 +2,7 @@
 
 import Image, { StaticImageData } from 'next/image'
 import { motion } from 'motion/react'
-import { useEffect, useState } from 'react'
+import { useDevice } from './useDevice'
 
 type ServiceCardProps = {
   cover: StaticImageData
@@ -11,23 +11,7 @@ type ServiceCardProps = {
 }
 
 export function ServiceCard({ cover, title, description }: ServiceCardProps) {
-  const [device, setDevice] = useState<'mobile' | 'desktop'>('mobile')
-
-  function changeDevice() {
-    if (window.matchMedia('(min-width: 1024px)').matches) {
-      setDevice('desktop')
-    } else {
-      setDevice('mobile')
-    }
-  }
-
-  useEffect(() => {
-    changeDevice()
-
-    window.addEventListener('resize', changeDevice)
-
-    return () => window.removeEventListener('resize', changeDevice)
-  }, [])
+  const { device } = useDevice()
 
   return (
     <article className="w-full h-full relative overflow-hidden">
