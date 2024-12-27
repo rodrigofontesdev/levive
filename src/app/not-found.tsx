@@ -2,8 +2,8 @@ import { ButtonLink } from '@/components/ButtonLink'
 import { openGraph, twitterCard } from './shared-metadata'
 import { Metadata } from 'next'
 
-const title = `Página não encontrada | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
-const description = `Entenda como a ${process.env.NEXT_PUBLIC_APP_SHORT_NAME} utiliza cookies para melhorar sua experiência no site.`
+const title = `404 | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
+const description = `Ops! O conteúdo que você está tentando acessar não existe ou foi removido temporariamente.`
 
 export const metadata: Metadata = {
   title: title,
@@ -32,9 +32,11 @@ export default function NotFound() {
   return (
     <main>
       <section>
-        <div className="max-w-screen-xl mx-auto py-32 px-5">
-          <h1 className="uppercase text-[10rem] text-center font-bold mb-5">404</h1>
-          <h2 className="uppercase text-4xl text-center mb-10">Página não encontrada</h2>
+        <div className="max-w-screen-xl mx-auto py-16 lg:py-28 px-5">
+          <span className="block uppercase text-[10rem] text-center font-bold mb-5">404</span>
+          <h1 className="uppercase text-4xl text-center -tracking-wider mb-10">
+            Página não encontrada
+          </h1>
 
           <p className="text-center mb-10">
             A página que você está procurando não existe ou pode ter sido removida temporariamente.

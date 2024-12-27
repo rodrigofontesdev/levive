@@ -6,7 +6,7 @@ import { clickToChat } from '@/helpers/app'
 import Image from 'next/image'
 
 import heroBannerImage from '@/assets/hero-banner.png'
-import submarkImage from '@/assets/levive-submark-black.svg'
+import submarkImage from '@/assets/levive-submark-dark.svg'
 
 export function Hero({ sectionId }: { sectionId: string }) {
   return (
