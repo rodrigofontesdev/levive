@@ -55,7 +55,7 @@ export function Header() {
 
           <div
             className={twMerge(
-              'absolute xl:relative top-[69px] xl:top-auto right-0 xl:right-auto left-0 xl:left-auto z-[100] xl:z-auto flex flex-col xl:flex-row items-center gap-5 xl:gap-10 transition-colors duration-300 ease-in',
+              'absolute xl:relative top-[65px] xl:top-auto right-0 xl:right-auto left-0 xl:left-auto z-[100] xl:z-auto flex flex-col xl:flex-row items-center gap-5 xl:gap-10 transition-colors duration-300 ease-in',
               isMobileMenuOpen
                 ? 'bg-muted opacity-100 py-8 shadow-[0_12px_18px_-9px_rgba(23,19,16,0.20)]'
                 : 'invisible xl:visible origin-top scale-0 xl:scale-100',
