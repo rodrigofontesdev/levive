@@ -67,6 +67,7 @@ export function Hero({ sectionId }: { sectionId: string }) {
             <Image
               src={heroBannerImage}
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               quality={100}
               priority
               alt="Na imagem estão a Dra. Erenilda Barbosa à esquerda, Dr. Diego Barbosa no meio, Dr. Samuel Montalvão e Dr. Luis Machado à direita, respectivamente. Todos na foto estão em pé, com sorriso no rosto e roupas elegantes"
