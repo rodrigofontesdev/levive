@@ -65,3 +65,27 @@ h6 {
 .page-content ul {
   @apply list-inside list-disc pl-4 mb-4;
 }
+
+.page-content table {
+  @apply w-full max-w-full border-collapse;
+}
+
+.page-content thead {
+  @apply border border-black;
+}
+
+.page-content thead th {
+  @apply py-2 px-4 text-left;
+}
+
+.page-content tbody {
+  @apply border border-black;
+}
+
+.page-content tbody tr {
+  @apply border-b border-black;
+}
+
+.page-content tbody td {
+  @apply py-2 px-4 text-left;
+}

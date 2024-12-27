@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { openGraph, twitterCard } from '../shared-metadata'
+import { PageHeading } from '@/components/PageHeading'
 
 const title = `Política de Cookies | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
 const description = `Entenda como a ${process.env.NEXT_PUBLIC_APP_SHORT_NAME} utiliza cookies para melhorar sua experiência no site. Saiba como gerenciar suas preferências de cookies.`
@@ -28,11 +29,7 @@ export default function CookiesPolicy() {
   return (
     <main>
       <section className="page-content">
-        <div className="bg-very-dark-brown py-24 lg:py-40 px-5">
-          <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl text-muted text-center leading-tight -tracking-wider">
-            Política de Cookies
-          </h1>
-        </div>
+        <PageHeading title="Política de Cookies" />
 
         <div className="max-w-screen-xl mx-auto py-24 px-5">
           <p className="font-bold">Última atualização: 27 de novembro de 2024</p>
@@ -185,40 +182,40 @@ export default function CookiesPolicy() {
           <h3>7.1 Cookies Específicos Utilizados</h3>
 
           <div className="overflow-x-auto">
-            <table className="w-full max-w-full border-collapse">
-              <thead className="border border-black">
+            <table>
+              <thead>
                 <tr>
-                  <th className="py-2 px-4 text-left">Nome do Cookie</th>
-                  <th className="py-2 px-4 text-left">Provedor</th>
-                  <th className="py-2 px-4 text-left">Finalidade</th>
-                  <th className="py-2 px-4 text-left">Duração</th>
+                  <th>Nome do Cookie</th>
+                  <th>Provedor</th>
+                  <th>Finalidade</th>
+                  <th>Duração</th>
                 </tr>
               </thead>
 
-              <tbody className="border border-black">
-                <tr className="border-b border-black">
-                  <td className="py-2 px-4 text-left">_ga</td>
-                  <td className="py-2 px-4 text-left">Google Analytics</td>
-                  <td className="py-2 px-4 text-left">Distingue usuários únicos</td>
-                  <td className="py-2 px-4 text-left">2 anos</td>
+              <tbody>
+                <tr>
+                  <td>_ga</td>
+                  <td>Google Analytics</td>
+                  <td>Distingue usuários únicos</td>
+                  <td>2 anos</td>
                 </tr>
-                <tr className="border-b border-black">
-                  <td className="py-2 px-4 text-left">_gid</td>
-                  <td className="py-2 px-4 text-left">Google Analytics</td>
-                  <td className="py-2 px-4 text-left">Analisa como os usuários usam o site</td>
-                  <td className="py-2 px-4 text-left">24 horas</td>
+                <tr>
+                  <td>_gid</td>
+                  <td>Google Analytics</td>
+                  <td>Analisa como os usuários usam o site</td>
+                  <td>24 horas</td>
                 </tr>
-                <tr className="border-b border-black">
-                  <td className="py-2 px-4 text-left">_fbp</td>
-                  <td className="py-2 px-4 text-left">Meta</td>
-                  <td className="py-2 px-4 text-left">Rastreia visitas em sites</td>
-                  <td className="py-2 px-4 text-left">3 meses</td>
+                <tr>
+                  <td>_fbp</td>
+                  <td>Meta</td>
+                  <td>Rastreia visitas em sites</td>
+                  <td>3 meses</td>
                 </tr>
-                <tr className="border-b border-black">
-                  <td className="py-2 px-4 text-left">_gac</td>
-                  <td className="py-2 px-4 text-left">Google Ads</td>
-                  <td className="py-2 px-4 text-left">Mede conversões de anúncios</td>
-                  <td className="py-2 px-4 text-left">90 dias</td>
+                <tr>
+                  <td>_gac</td>
+                  <td>Google Ads</td>
+                  <td>Mede conversões de anúncios</td>
+                  <td>90 dias</td>
                 </tr>
               </tbody>
             </table>
