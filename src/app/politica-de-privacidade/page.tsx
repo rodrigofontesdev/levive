@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { openGraph, twitterCard } from '../shared-metadata'
+import { PageHeading } from '@/components/PageHeading'
 
 const title = `Política de Privacidade | ${process.env.NEXT_PUBLIC_APP_SHORT_NAME}`
 const description = `Descubra como a ${process.env.NEXT_PUBLIC_APP_SHORT_NAME} protege sua privacidade. Entenda como coletamos, utilizamos e armazenamos seus dados pessoais.`
@@ -28,11 +29,7 @@ export default function PrivacyPolicy() {
   return (
     <main>
       <section className="page-content">
-        <div className="bg-very-dark-brown py-24 lg:py-40 px-5">
-          <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl text-muted text-center leading-tight -tracking-wider">
-            Política de Privacidade
-          </h1>
-        </div>
+        <PageHeading title="Política de Privacidade" />
 
         <div className="max-w-screen-xl mx-auto py-24 px-5">
           <p className="font-bold">Última atualização: 27 de novembro de 2024</p>
