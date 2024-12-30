@@ -13,6 +13,10 @@ type InputProps = InputHTMLAttributes<HTMLInputElement>
 
 type TextAreaProps = TextareaHTMLAttributes<HTMLTextAreaElement>
 
+type ErrorProps = {
+  message?: string
+}
+
 function Root({ children }: RootProps) {
   return <div className="flex flex-col flex-1">{children}</div>
 }
@@ -55,9 +59,21 @@ function TextArea({ className, ...props }: TextAreaProps) {
   )
 }
 
+function Error({ message }: ErrorProps) {
+  return (
+    <p
+      className="text-sm text-red-400 pt-2 px-5"
+      role="alert"
+    >
+      {message}
+    </p>
+  )
+}
+
 export const InputGroup = {
   Root: Root,
   Label: Label,
   Input: Input,
   TextArea: TextArea,
+  Error: Error,
 }
